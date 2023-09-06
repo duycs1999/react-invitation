@@ -16,10 +16,14 @@ export default function TextName() {
 
     const handleButtonClick = () => {
         const targetUser = _.find(data, {"user":`${inputName}`})
-        if(targetUser!=null){
-            history.push(`/invitation/${inputName}`)
-        }else {
+        if(targetUser==null){
             alert(`${inputName} thì lại éo có tuổi mất rồi, cay thế nhờ 😏`)
+        }
+        else if(targetUser.user=='tiendh3'){
+            alert(`Tiến à, Tiến thì ... lại éo có tuổi mất rồi, cay thế nhờ 😏`)
+        }
+        else {
+            history.push(`/invitation/${inputName}`)
         }
     };
 
@@ -27,7 +31,7 @@ export default function TextName() {
         <Main id="opener">
             <Container className="container">
                 <div className={"col-md-6 col-lg-4 col-6 col-sm-10"}>
-                    <Card title="Cho xin cái quý danh nhớ" >
+                    <Card title="Cho xin cái quý danh Viettel phát" >
                         <Input placeholder="Ví dụ: chiendd6" onChange={handleInputChange} />
                         <div className={"card-center"}>
                             <Button type="primary" onClick={handleButtonClick}>

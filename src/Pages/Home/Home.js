@@ -18,10 +18,15 @@ export default function Home({match}) {
   const history = useHistory();
   useEffect(() => {
     const targetUser = _.find(data, {"user":`${userName}`})
-    if(targetUser!=null){
-      setUser(targetUser)
-    }else {
+    if(targetUser==null){
       history.replace("/")
+    }
+    else if(targetUser.user=='tiendh3'){
+      alert(`Tiến à, Tiến thì ... lại éo có tuổi mất rồi, cay thế nhờ 😏`)
+      history.replace("/")
+    }
+    else {
+      setUser(targetUser)
     }
     setTimeout(() => setLoading(false), 3000);
     AOS.init({
