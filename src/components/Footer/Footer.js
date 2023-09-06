@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Footer.css";
-
-export default function Footer() {
+import place from "../../constants/place.json"
+export default function Footer({name}) {
   return (
     <footer id="footer">
       <Container className="container">
@@ -13,10 +13,23 @@ export default function Footer() {
           data-aos-delay="10"
           data-aos-duration="320"
         >
-          Coming 2022
+          Hẹn gặp lại {name} vào {place.time} nhé
         </h1>
+        <div className={"footerTitleBottom"}>
+          <p>
+            Địa điểm: {place.name}.
+          </p>
+          <p>
+            Cả nò rất vui vì sự có mặt của {name}.
+          </p>
+          <p>
+            Thay mặt cả lò, xin trân thành cảm ơn {name} nhớ!
+          </p>
+        </div>
         <button className="sendEmailBtn">
-          Enter email to get notified first
+          <a href={"https://telegram.me/duynk99"}>
+            Liên hệ với tôi khi cần trợ giúp, cái giá phải trả là 50k
+          </a>
         </button>
       </Container>
     </footer>

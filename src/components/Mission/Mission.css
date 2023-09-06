@@ -4,8 +4,8 @@
 }
 
 #mission .content .title {
-  font-size: clamp(5rem, 20vw, 19rem);
-  line-height: 23rem;
+  font-size: clamp(4rem, 16vw, 15rem);
+  line-height: 20rem;
   text-transform: capitalize;
 }
 

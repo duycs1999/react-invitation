@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from "react";
-import Header from "../../components/Header/Header";
 import Opener from "../../components/Opener/Opener";
 import GetStarted from "../../components/GetStarted/GetStarted";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 import Importance from "../../components/Importance/Importance";
 import Mission from "../../components/Mission/Mission";
-import Team from "../../components/Team/Team";
+import Food from "../../components/Food/Food";
 import "aos/dist/aos.css";
 import AOS from "aos";
-
-export default function Home() {
+import data from "../../constants/data.json"
+import _ from "lodash";
+import {useHistory} from "react-router-dom";
+export default function Home({match}) {
+  const { userName } = match.params;
   const [loading, setLoading] = useState(true);
-
+  const [user, setUser] = useState();
+  const history = useHistory();
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    const targetUser = _.find(data, {"user":`${userName}`})
+    if(targetUser!=null){
+      setUser(targetUser)
+    }else {
+      history.replace("/")
+    }
+    setTimeout(() => setLoading(false), 3000);
     AOS.init({
-      duration: 2000,
+      duration: 3000,
       once: true,
     });
   }, []);
@@ -24,16 +33,15 @@ export default function Home() {
     <>
       {loading ? (
         <div>
-          <Opener />
+          <Opener name={userName} />
         </div>
       ) : (
         <main id="home">
-          <Header />
           <GetStarted />
           <Importance />
           <Mission />
-          <Team />
-          <Footer />
+          <Food />
+          <Footer name={user?.name}/>
         </main>
       )}
     </>

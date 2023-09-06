@@ -18,15 +18,25 @@ footer .container {
 }
 
 footer .footerTitle {
-  font-size: clamp(4.7rem, 10vw, 9.5rem);
-  text-transform: capitalize;
+  font-size: 30px;
+  /*text-transform: capitalize;*/
   text-align: center;
   font-weight: bold;
-  padding: 3rem 0;
+  color: #d2cccc;
+  padding: 8px 0;
+}
+
+footer .footerTitleBottom {
+  font-size: 25px;
+  /*text-transform: capitalize;*/
+  text-align: center;
+  color: #d2cccc;
+  /*font-weight: bold;*/
+  padding: 5px 0;
 }
 
 footer .sendEmailBtn {
-  padding: 1.2rem 6rem;
+  padding: 1.2rem 30px;
   background: #ffb613;
   border: 2px solid green;
   color: white;

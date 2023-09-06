@@ -2,7 +2,7 @@ import React from "react";
 import opener from "../../assets/opener.png";
 import styled from "styled-components";
 
-export default function Opener() {
+export default function Opener({name}) {
   return (
     <Main id="opener">
       <Container className="container">
@@ -12,7 +12,7 @@ export default function Opener() {
           data-aos-delay="10"
           data-aos-duration="370"
         >
-          Lgr
+            Chào {name}, nhớ !
         </Heading>
       </Container>
     </Main>
@@ -35,7 +35,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: clamp(8rem, 20vw, 14rem);
-  text-transform: uppercase;
-  font-weight: normal;
+  font-size: 50px;
+  text-transform:uppercase;
+  font-weight: bold;
 `;

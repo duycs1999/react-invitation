@@ -9,8 +9,7 @@ export default function Importance() {
       <Container className="container">
         <img src={art} alt="not found" />
         <h1 className="title">
-          Why We Are
-          <br /> Different
+         Đề xuất
         </h1>
         <div
           className="first-left"
@@ -19,11 +18,9 @@ export default function Importance() {
           data-aos-duration="370"
           data-aos-delay="10"
         >
-          <h2 className="first-left-title">Help Creators Be Proactive</h2>
+          <h2 className="first-left-title">Chúng ta phải làm gì để lấy lại những thứ đã bỏ lỡ suốt 3 tuần qua ?</h2>
           <p className="first-left-info">
-            Our marketplace platform gives creators the ability to pick and
-            choose among all collaboration opportunities available out there. So
-            no more sit and wait!
+            Đơn giản là một buổi tối weekly nhẹ nhàng để tận hưởng cái thời tiết 10 đỉm này
           </p>
         </div>
         <div
@@ -33,11 +30,10 @@ export default function Importance() {
           data-aos-delay="10"
           data-aos-duration="370"
         >
-          <h2 className="first-right-title">Build a Community</h2>
+          <h2 className="first-right-title">Chọn một chốn đặt đít như thế nào để hít được mùi hoa sữa lồng làn một cách thanh cảnh ?</h2>
           <div className="first-right-info">
-            Creators are able to share their personal experience and ask
-            questions through blog posts and Q&A panels. We want to help you
-            find friends and mentors :)
+            Lấy lại không khí của những ngày đầu khi khởi tạo group, chúng ta tìm về với những địa điểm đầu tiên mà dự án weekly được diễn ra.
+            Cụ thể luôn là cái hồ tên Tây
           </div>
         </div>
         <div
@@ -47,11 +43,9 @@ export default function Importance() {
           data-aos-duration="370"
           data-aos-delay="10"
         >
-          <h2 className="second-left-title">Authenticity + Growth</h2>
+          <h2 className="second-left-title">Chúng ta sẽ tham gia những hoạt động gì ở đây ?</h2>
           <p className="second-left-info">
-            Authenticity and growth can co-live! Each creator can see analytics
-            of personal growth and insights on how sponsored content is
-            affecting their audience.{" "}
+            Lúc đấy cũng đã tối chết cụ ra rồi, đi ăn uống 1 ít rồi ngồi uống nước cho nó nhanh vào việc.
           </p>
         </div>
       </Container>

@@ -25,7 +25,7 @@ export default function GetStarted() {
             data-aos-delay="10"
             data-aos-duration="370"
           >
-            Collaborate with anyone you want, however you want.
+            Hiện trạng
           </h1>
           <p
             className="info"
@@ -34,20 +34,10 @@ export default function GetStarted() {
             data-aos-delay="10"
             data-aos-duration="370"
           >
-            LGR is an online creator marketplace that gives you the freedom to
-            find collaborations opportunities, grow your brand and learn from
-            others.
+           Nhân cái thể là mùa thu đã đến, từng cơn gió heo may nhè nhẹ thổi đi cái lóng và lực của mùa hè, có
+            thể nói thời tiết đang dễ chịu vô cùng. Bên cạnh đó, chúng ta đã có 1 kỳ nghỉ lễ tuy không dài nhưng
+              nó làm cho chu kỳ weekly của team đang tăng nhẹ từ 2 lên 3 tuần.
           </p>
-          <button
-            className="getStartedBtn"
-            data-aos="slide-up"
-            data-aos-anchor-placement="bottom-bottom"
-            data-aos-delay="20"
-            data-aos-duration="1000"
-            easing="ease-in"
-          >
-            <strong>Get Started</strong> - It's free
-          </button>
         </div>
       </Container>
     </section>
