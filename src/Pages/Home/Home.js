@@ -19,10 +19,7 @@ export default function Home({match}) {
   useEffect(() => {
     const targetUser = _.find(data, {"user":`${userName}`})
     if(targetUser==null){
-      history.replace("/")
-    }
-    else if(targetUser.user=='tiendh3'){
-      alert(`Tiến à, Tiến thì ... lại éo có tuổi mất rồi, cay thế nhờ 😏`)
+      alert(`Bỏ cái trò bẩn tưởi này đi, éo vào đc đâu, cay thế nhờ 😏`)
       history.replace("/")
     }
     else {
@@ -38,7 +35,7 @@ export default function Home({match}) {
     <>
       {loading ? (
         <div>
-          <Opener name={userName} />
+          <Opener name={user?.name} />
         </div>
       ) : (
         <main id="home">

@@ -12,7 +12,7 @@ export default function Opener({name}) {
           data-aos-delay="10"
           data-aos-duration="370"
         >
-            Chào {name}, nhớ !
+            Chào {name} nhớ !
         </Heading>
       </Container>
     </Main>
@@ -36,6 +36,5 @@ const Container = styled.div`
 
 const Heading = styled.h1`
   font-size: 50px;
-  text-transform:uppercase;
   font-weight: bold;
 `;
